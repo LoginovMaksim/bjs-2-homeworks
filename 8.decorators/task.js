@@ -1,8 +1,15 @@
+let funTest = cachingDecoratorNew(sum = (a, b) => a+b);
+
 function cachingDecoratorNew(func) {
-  // Ваш код
+  console.log(func);
+  return func;
 }
 
+// funTest(4,5);
+// console.log(funTest);
+console.log(funTest(5,5));
 
-function debounceDecoratorNew(func) {
-  // Ваш код
-}
+
+// function debounceDecoratorNew(func) {
+//   // Ваш код
+// }

@@ -12,40 +12,27 @@ body {
   background-color: #f6f8f9;
 }
 
-input {
-  width: 100%;
-  display: block;
-  padding: 10px 20px;
-  margin: 0 0 20px 0;
-  font-family: Golos, Arial, sans-serif;
-  border: 1px solid #e2e2e2;
-  box-sizing: border-box;
-}
 
-input:focus {
-    outline: 1px solid #999
-}
-
-.header {
+/* .header {
   display: flex;
   align-items: center;
   padding: 20px;
   background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
+} */
 
-.header__title {
+/* .header__title {
   margin: 0;
   padding: 0;
   font-size: 22px;
-}
+} */
 
-.logo__container {
+/* .logo__container {
   width: 144px;
   margin-right: 50px;
-}
+} */
 
-.logo__link {
+/* .logo__link {
   width: 144px;
   height: 20px;
   display: block;
@@ -53,26 +40,50 @@ input:focus {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
 .content {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding-top: 20px;
   background-color: #f6f8f9;
 }
 
 .card {
-  width: 400px;
-  padding: 20px 30px;
-  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 550px;
+  padding: 0px 15px;
+  margin-bottom: 10px;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
-.card-wide {
+input {
+  width: 120px;
+  padding: 8px 10px;
+  font-family: Golos, Arial, sans-serif;
+  border: 1px solid #e2e2e2;
+  box-sizing: border-box;
+  margin: 0px 5px 10px 5px;
+}
+
+input:focus {
+  outline: 1px solid #999
+}
+
+.input_box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
+  margin: 20px 5px 0px 5px;
 }
 
 button {
@@ -80,11 +91,10 @@ button {
   color: #fff;
   background-color: #06f;
   border: 1px solid transparent;
-  border-radius: 2px;
+  border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
-  display: inline-block;
-  margin: 0 0 20px 0;
+  margin: 14px 7px;
   overflow: hidden;
   outline: none;
   padding: 8px 12px;
@@ -100,4 +110,18 @@ button {
 
 button:hover {
   background-color: #005ce6;
+}
+
+.Button_box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.result {
+  margin-bottom: 10px;
+  /* display: flex;
+  align-items: flex-start;
+  justify-content: flex-start; */
 }

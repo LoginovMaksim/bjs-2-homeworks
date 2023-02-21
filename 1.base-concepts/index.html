@@ -9,29 +9,58 @@
   </head>
 
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="logo__container">
         <a href="https://netology.ru/" class="logo__link"></a>
       </div>
       <h1 class="header__title">
         Домашнее задание к лекции 1. «Основные понятия»
       </h1>
-    </header>
+    </header> -->
     <main class="content">
+
       <div class="card">
-        <input type="number" placeholder="a" id="a" />
-        <input type="number" placeholder="b" id="b" />
-        <input type="number" placeholder="c" id="c" />
-        <button onClick="calculateQuadraticEquation()">
-          Считать задание №1
-        </button>
-        <div>
+        <div class="input_box">
+          Задание: создать 10 рандомных чисел, вывести максимально созданное число, и вывести числа которые не использовал рандом. Диапазон рандома от 0 до 9. 
+        </div>
+        <div class="Button_box">
+          <button class="resultButton" onClick="calculateQuadraticEquation()">
+            Рассчитать
+          </button>
+          <button class="resultButton" onClick="reload()">
+            Обновить
+          </button>
+        </div>
+        <div class="result">
+          <div>Результат:</div>
           <span id="equation"></span><br />
-          <span id="result"></span>
+          <span id="result"></span><br />
+          <span id="result2"></span>
         </div>
       </div>
 
       <div class="card">
+        <div class="input_box">
+          <input type="number" placeholder="a" id="a" />
+          <input type="number" placeholder="b" id="b" />
+          <input type="number" placeholder="c" id="c" />
+          <input type="number" placeholder="d" id="d" />
+        </div>
+        <div class="Button_box">
+          <button class="resultButton" onClick="calculate()">
+            Рассчитать
+          </button>
+          <button class="resultButton" onClick="reload()">
+            Обновить
+          </button>
+        </div>
+        <div class="result">
+          <div>Результат:</div>
+          <span id="result3"></span>
+        </div>
+      </div>
+
+      <!-- <div class="card">
         <input type="text" placeholder="Процентная ставка" id="percent" />
         <input type="text" placeholder="Начальный взнос" id="contribution" />
         <input type="text" placeholder="Общая стоимость" id="amount" />
@@ -41,10 +70,10 @@
         </button>
         <div>
           <span id="mortageResult"></span>
-        </div>
+        </div> -->
+
       </div>
     </main>
-    <script src="task.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
